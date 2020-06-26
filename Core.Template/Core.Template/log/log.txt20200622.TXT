@@ -1,0 +1,17 @@
+2020-06-22 10:12:08,411 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-22 10:12:08,477 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-22 10:12:08,550 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\PCXT\Desktop\Core.Template\Core.Template
+2020-06-22 10:12:18,864 [4] WARN  Core.Template.Controllers.AuthenticationController - 测试启动啦
+2020-06-22 10:21:19,995 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-22 10:21:20,026 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-22 10:21:20,034 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\PCXT\Desktop\Core.Template\Core.Template
+2020-06-22 10:24:50,314 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-22 10:24:50,347 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-22 10:24:50,363 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\PCXT\Desktop\Core.Template\Core.Template
+2020-06-22 10:36:37,098 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-22 10:36:37,171 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-22 10:36:37,184 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\PCXT\Desktop\Core.Template\Core.Template
+2020-06-22 10:37:55,969 [6] WARN  Core.Template.Controllers.AuthenticationController - 测试启动啦
+2020-06-22 10:37:59,913 [6] WARN  Core.Template.Controllers.AuthenticationController - 测试启动啦
+2020-06-22 10:38:51,405 [13] WARN  Core.Template.Controllers.AuthenticationController - 测试启动啦
+2020-06-22 10:38:52,303 [13] WARN  Core.Template.Controllers.AuthenticationController - 测试启动啦

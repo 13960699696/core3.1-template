@@ -1,0 +1,12 @@
+C:\Users\PCXT\Desktop\Core.Template\Core.models\bin\Debug\netcoreapp3.1\Core.models.deps.json
+C:\Users\PCXT\Desktop\Core.Template\Core.models\bin\Debug\netcoreapp3.1\Core.models.dll
+C:\Users\PCXT\Desktop\Core.Template\Core.models\obj\Debug\netcoreapp3.1\Core.models.csprojAssemblyReference.cache
+C:\Users\PCXT\Desktop\Core.Template\Core.models\obj\Debug\netcoreapp3.1\Core.models.AssemblyInfoInputs.cache
+C:\Users\PCXT\Desktop\Core.Template\Core.models\obj\Debug\netcoreapp3.1\Core.models.AssemblyInfo.cs
+C:\Users\PCXT\Desktop\Core.Template\Core.models\bin\Debug\netcoreapp3.1\Core.models.runtimeconfig.json
+C:\Users\PCXT\Desktop\Core.Template\Core.models\bin\Debug\netcoreapp3.1\Core.models.runtimeconfig.dev.json
+C:\Users\PCXT\Desktop\Core.Template\Core.models\obj\Debug\netcoreapp3.1\Core.models.genruntimeconfig.cache
+C:\Users\PCXT\Desktop\Core.Template\Core.models\bin\Debug\netcoreapp3.1\Core.models.pdb
+C:\Users\PCXT\Desktop\Core.Template\Core.models\obj\Debug\netcoreapp3.1\Core.models.csproj.CoreCompileInputs.cache
+C:\Users\PCXT\Desktop\Core.Template\Core.models\obj\Debug\netcoreapp3.1\Core.models.dll
+C:\Users\PCXT\Desktop\Core.Template\Core.models\obj\Debug\netcoreapp3.1\Core.models.pdb

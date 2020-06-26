@@ -1,0 +1,36 @@
+//single-instance, per-lifetimescope, per-dependency, per-request
+{
+  "defaultAssembly": "Microsoft.EntityFrameworkCore", // 抽象所在的程序集名称
+  "components": [
+    {
+      "type": "Core.Service.JWTService,Core.Service",
+      "services": [
+        {
+          "type": "Core.Interface.IJWTService,Core.Interface"
+        }
+      ],
+      "instanceScope": "single-instance",
+      "injectProperties": true
+    },
+    {
+      "type": "Core.Service.AuthenticationService,Core.Service",
+      "services": [
+        {
+          "type": "Core.Interface.IAuthenticationService,Core.Interface"
+        }
+      ],
+      "instanceScope": "single-instance",
+      "injectProperties": true
+    },
+    {
+      "type": "Core.Service.UserService,Core.Service",
+      "services": [
+        {
+          "type": "Core.Interface.IUserService,Core.Interface"
+        }
+      ],
+      "instanceScope": "single-instance",
+      "injectProperties": true
+    }
+  ]
+}

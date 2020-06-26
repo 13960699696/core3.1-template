@@ -1,0 +1,791 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Core.Template</name>
+    </assembly>
+    <members>
+        <member name="T:core3._1_template.Class.CustomAutofacModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:core3._1_template.Class.CustomAutofacModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="containerBuilder"></param>
+        </member>
+        <member name="T:Core.Template.Class.UnitOfWork">
+            <summary>
+            数据库事务的使用
+            </summary>
+        </member>
+        <member name="M:Core.Template.Class.UnitOfWork.DbContextInvoke(System.Action,Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            普通事务的使用
+            </summary>
+            <param name="action">执行的方法</param>
+            <param name="dbContext">执行的上下文</param>
+        </member>
+        <member name="M:Core.Template.Class.UnitOfWork.RedisContextInvoke(System.Action,ServiceStack.Redis.IRedisClient)">
+            <summary>
+            Redis事务
+            </summary>
+            <param name="action">执行的方法</param>
+            <param name="redisClient">导入redis客户端</param>
+        </member>
+        <member name="M:Core.Template.Class.UnitOfWork.DistributedDbContextInvoke(System.Action)">
+            <summary>
+            分布式事务
+            </summary>
+            <param name="action">执行的方法</param>
+        </member>
+        <member name="T:Core.Template.Controllers.AuthenticationController">
+            <summary>
+            权限认证控制器
+            </summary>
+        </member>
+        <member name="M:Core.Template.Controllers.AuthenticationController.#ctor(Core.Interface.IAuthenticationService,Microsoft.Extensions.Logging.ILogger{Core.Template.Controllers.AuthenticationController})">
+            <summary>
+            权限认证构造函数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Controllers.AuthenticationController.RequestToken(Core.Tool.ManagementClass.LoginRequestDTO)">
+            <summary>
+            签发token
+            </summary>
+        </member>
+        <member name="M:Core.Template.Controllers.AuthenticationController.test">
+            <summary>
+            测试
+            </summary>
+        </member>
+        <member name="T:Core.Template.Controllers.WeatherForecastController">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Template.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{Core.Template.Controllers.WeatherForecastController})">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Template.Controllers.WeatherForecastController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Core.Template.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Template.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Core.Template.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Core.Template.Redis.RedisBase">
+            <summary>
+            RedisBase类，是redis操作的基类，继承自IDisposable接口，主要用于释放内存
+            </summary>
+        </member>
+        <member name="P:Core.Template.Redis.RedisBase.iClient">
+            <summary>
+            保存redis客户端字段
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisBase.#ctor">
+            <summary>
+            构造时完成链接的打开
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisBase.Dispose(System.Boolean)">
+            <summary>
+            释放redis
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Core.Template.Redis.RedisBase.Dispose">
+            <summary>
+            强制释放redis
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisBase.FlushAll">
+            <summary>
+            清除全部数据 请小心
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisBase.Save">
+            <summary>
+            保存数据DB文件到硬盘
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisBase.SaveAsync">
+            <summary>
+            异步保存数据DB文件到硬盘
+            </summary>
+        </member>
+        <member name="T:Core.Template.Redis.RedisConfigInfo">
+            <summary>
+            redis配置文件
+            </summary>
+        </member>
+        <member name="F:Core.Template.Redis.RedisConfigInfo.WriteServerList">
+            <summary>
+            可写的Redis链接地址
+            format:ip1,ip2
+            
+            默认6379端口
+            </summary>
+        </member>
+        <member name="F:Core.Template.Redis.RedisConfigInfo.ReadServerList">
+            <summary>
+            可读的Redis链接地址
+            format:ip1,ip2
+            </summary>
+        </member>
+        <member name="F:Core.Template.Redis.RedisConfigInfo.MaxWritePoolSize">
+            <summary>
+            最大写链接数
+            </summary>
+        </member>
+        <member name="F:Core.Template.Redis.RedisConfigInfo.MaxReadPoolSize">
+            <summary>
+            最大读链接数
+            </summary>
+        </member>
+        <member name="F:Core.Template.Redis.RedisConfigInfo.LocalCacheTime">
+            <summary>
+            本地缓存到期时间，单位:秒
+            </summary>
+        </member>
+        <member name="F:Core.Template.Redis.RedisConfigInfo.AutoStart">
+            <summary>
+            自动重启
+            </summary>
+        </member>
+        <member name="F:Core.Template.Redis.RedisConfigInfo.RecordeLog">
+            <summary>
+            是否记录日志,该设置仅用于排查redis运行时出现的问题,
+            如redis工作正常,请关闭该项
+            </summary>
+        </member>
+        <member name="T:Core.Template.Redis.RedisHashService">
+            <summary>
+            Redis哈希数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.SetEntryInHash(System.String,System.String,System.String)">
+            <summary>
+            向hashid集合中添加key/value
+            </summary>       
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.SetEntryInHashIfNotExists(System.String,System.String,System.String)">
+            <summary>
+            如果hashid集合中存在key/value则不添加返回false，
+            如果不存在在添加key/value,返回true
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.StoreAsHash``1(``0)">
+            <summary>
+            存储对象T t到hash集合中
+            需要包含Id，然后用Id获取
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.GetFromHash``1(System.Object)">
+            <summary>
+            获取对象T中ID为id的数据。
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.GetAllEntriesFromHash(System.String)">
+            <summary>
+            获取所有hashid数据集的key/value数据集合
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.GetHashCount(System.String)">
+            <summary>
+            获取hashid数据集中的数据总数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.GetHashKeys(System.String)">
+            <summary>
+            获取hashid数据集中所有key的集合
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.GetHashValues(System.String)">
+            <summary>
+            获取hashid数据集中的所有value集合
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.GetValueFromHash(System.String,System.String)">
+            <summary>
+            获取hashid数据集中，key的value数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.GetValuesFromHash(System.String,System.String[])">
+            <summary>
+            获取hashid数据集中，多个keys的value集合
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.RemoveEntryFromHash(System.String,System.String)">
+            <summary>
+            删除hashid数据集中的key数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.HashContainsEntry(System.String,System.String)">
+            <summary>
+            判断hashid数据集中是否存在key的数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisHashService.IncrementValueInHash(System.String,System.String,System.Double)">
+            <summary>
+            给hashid数据集key的value加countby，返回相加后的数据
+            </summary>
+        </member>
+        <member name="T:Core.Template.Redis.RedisListService">
+            <summary>
+            RedisList
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.LPush(System.String,System.String)">
+            <summary>
+            从左侧向list中添加值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.LPush(System.String,System.String,System.DateTime)">
+            <summary>
+            从左侧向list中添加值，并设置过期时间
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.LPush(System.String,System.String,System.TimeSpan)">
+            <summary>
+            从左侧向list中添加值，设置过期时间
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.RPush(System.String,System.String)">
+            <summary>
+            从右侧向list中添加值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.RPush(System.String,System.String,System.DateTime)">
+            <summary>
+            从右侧向list中添加值，并设置过期时间
+            </summary>    
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.RPush(System.String,System.String,System.TimeSpan)">
+            <summary>
+            从右侧向list中添加值，并设置过期时间
+            </summary>        
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Add(System.String,System.String)">
+            <summary>
+            添加key/value
+            </summary>     
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Add(System.String,System.String,System.DateTime)">
+            <summary>
+            添加key/value ,并设置过期时间
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Add(System.String,System.String,System.TimeSpan)">
+            <summary>
+            添加key/value。并添加过期时间
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Add(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            为key添加多个值
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Add(System.String,System.Collections.Generic.List{System.String},System.DateTime)">
+            <summary>
+            为key添加多个值，并设置过期时间
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Add(System.String,System.Collections.Generic.List{System.String},System.TimeSpan)">
+            <summary>
+            为key添加多个值，并设置过期时间
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Count(System.String)">
+            <summary>
+            获取list中key包含的数据数量
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Get(System.String)">
+            <summary>
+            获取key包含的所有数据集合
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Get(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取key中下标为star到end的值集合 
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.BlockingPopItemFromList(System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+             阻塞命令：从list为key的尾部移除一个值，并返回移除的值，阻塞时间为sp
+            </summary>  
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Core.Template.Redis.RedisListService.BlockingPopItemFromLists(System.String[],System.Nullable{System.TimeSpan})" -->
+        <member name="M:Core.Template.Redis.RedisListService.BlockingDequeueItemFromList(System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+             阻塞命令：从list中keys的尾部移除一个值，并返回移除的值，阻塞时间为sp
+            </summary>  
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Core.Template.Redis.RedisListService.BlockingDequeueItemFromLists(System.String[],System.Nullable{System.TimeSpan})" -->
+        <member name="M:Core.Template.Redis.RedisListService.BlockingPopAndPushItemBetweenLists(System.String,System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+            阻塞命令：从list中一个fromkey的尾部移除一个值，添加到另外一个tokey的头部，并返回移除的值，阻塞时间为sp
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.PopItemFromList(System.String)">
+            <summary>
+            从尾部移除数据，返回移除的数据
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.DequeueItemFromList(System.String)">
+            <summary>
+            从尾部移除数据，返回移除的数据
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.RemoveItemFromList(System.String,System.String)">
+            <summary>
+            移除list中，key/value,与参数相同的值，并返回移除的数量
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.RemoveEndFromList(System.String)">
+            <summary>
+            从list的尾部移除一个数据，返回移除的数据
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.RemoveStartFromList(System.String)">
+            <summary>
+            从list的头部移除一个数据，返回移除的值
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.PopAndPushItemBetweenLists(System.String,System.String)">
+            <summary>
+            从一个list的尾部移除一个数据，添加到另外一个list的头部，并返回移动的值
+            </summary>  
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Publish(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="channel"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.Subscribe(System.String,System.Action{System.String,System.String,ServiceStack.Redis.IRedisSubscription})">
+            <summary>
+            
+            </summary>
+            <param name="channel"></param>
+            <param name="actionOnMessage"></param>
+        </member>
+        <member name="M:Core.Template.Redis.RedisListService.UnSubscribeFromChannels(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="channel"></param>
+        </member>
+        <member name="T:Core.Template.Redis.RedisManager">
+            <summary>
+            Redis管理中心
+            </summary>
+        </member>
+        <member name="F:Core.Template.Redis.RedisManager.RedisConfigInfo">
+            <summary>
+            redis配置文件信息
+            </summary>
+        </member>
+        <member name="F:Core.Template.Redis.RedisManager.prcManager">
+            <summary>
+            Redis客户端池化管理
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisManager.#cctor">
+            <summary>
+            静态构造方法，初始化链接池管理对象
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisManager.CreateManager">
+            <summary>
+            创建链接池管理对象
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisManager.GetClient">
+            <summary>
+            客户端缓存操作对象
+            </summary>
+        </member>
+        <member name="T:Core.Template.Redis.RedisSetService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.Add(System.String,System.String)">
+            <summary>
+            key集合中添加value值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.Add(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            key集合中添加list集合
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.GetRandomItemFromSet(System.String)">
+            <summary>
+            随机获取key集合中的一个值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.GetCount(System.String)">
+            <summary>
+            获取key集合值的数量
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.GetAllItemsFromSet(System.String)">
+            <summary>
+            获取所有key集合的值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.RandomRemoveItemFromSet(System.String)">
+            <summary>
+            随机删除key集合中的一个值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.RemoveItemFromSet(System.String,System.String)">
+            <summary>
+            删除key集合中的value
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.MoveBetweenSets(System.String,System.String,System.String)">
+            <summary>
+            从fromkey集合中移除值为value的值，并把value添加到tokey集合中
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.GetUnionFromSets(System.String[])">
+            <summary>
+            返回keys多个集合中的并集，返还hashset
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.GetIntersectFromSets(System.String[])">
+            <summary>
+            返回keys多个集合中的交集，返还hashset
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.GetDifferencesFromSet(System.String,System.String[])">
+            <summary>
+            返回keys多个集合中的差集，返还hashset
+            </summary>
+            <param name="fromKey">原集合</param>
+            <param name="keys">其他集合</param>
+            <returns>出现在原集合，但不包含在其他集合</returns>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.StoreUnionFromSets(System.String,System.String[])">
+            <summary>
+            keys多个集合中的并集，放入newkey集合中
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisSetService.StoreDifferencesFromSet(System.String,System.String,System.String[])">
+            <summary>
+            把fromkey集合中的数据与keys集合中的数据对比，fromkey集合中不存在keys集合中，则把这些不存在的数据放入newkey集合中
+            </summary>
+        </member>
+        <member name="T:Core.Template.Redis.RedisStringService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Set``1(System.String,``0)">
+            <summary>
+            设置key的value
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Set``1(System.String,``0,System.DateTime)">
+            <summary>
+            设置key的value并设置过期时间
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Set``1(System.String,``0,System.TimeSpan)">
+            <summary>
+            设置key的value并设置过期时间
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Set(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            设置多个key/value
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Append(System.String,System.String)">
+            <summary>
+            在原有key的value值之后追加value,没有就新增一项
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Get(System.String)">
+            <summary>
+            获取key的value值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Get(System.Collections.Generic.List{System.String})">
+            <summary>
+            获取多个key的value值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Get``1(System.Collections.Generic.List{System.String})">
+            <summary>
+            获取多个key的value值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.GetAndSetValue(System.String,System.String)">
+            <summary>
+            获取旧值赋上新值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.GetLength(System.String)">
+            <summary>
+            获取值的长度
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Incr(System.String)">
+            <summary>
+            自增1，返回自增后的值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.IncrBy(System.String,System.Int32)">
+            <summary>
+            自增count，返回自增后的值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.Decr(System.String)">
+            <summary>
+            自减1，返回自减后的值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisStringService.DecrBy(System.String,System.Int32)">
+            <summary>
+            自减count ，返回自减后的值
+            </summary>
+            <param name="key"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Core.Template.Redis.RedisZSetService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.Add(System.String,System.String)">
+            <summary>
+            添加key/value，默认分数是从1.多*10的9次方以此递增的,自带自增效果
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.AddItemToSortedSet(System.String,System.String,System.Double)">
+            <summary>
+            添加key/value,并设置value的分数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.AddRangeToSortedSet(System.String,System.Collections.Generic.List{System.String},System.Double)">
+            <summary>
+            为key添加values集合，values集合中每个value的分数设置为score
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.AddRangeToSortedSet(System.String,System.Collections.Generic.List{System.String},System.Int64)">
+            <summary>
+            为key添加values集合，values集合中每个value的分数设置为score
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetAll(System.String)">
+            <summary>
+            获取key的所有集合
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetAllDesc(System.String)">
+            <summary>
+            获取key的所有集合，倒叙输出
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetAllWithScoresFromSortedSet(System.String)">
+            <summary>
+            获取集合，带分数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetItemIndexInSortedSet(System.String,System.String)">
+            <summary>
+            获取key为value的下标值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetItemIndexInSortedSetDesc(System.String,System.String)">
+            <summary>
+            倒叙排列获取key为value的下标值
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetItemScoreInSortedSet(System.String,System.String)">
+            <summary>
+            获取key为value的分数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetSortedSetCount(System.String)">
+            <summary>
+            获取key所有集合的数据总数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetSortedSetCount(System.String,System.Double,System.Double)">
+            <summary>
+            key集合数据从分数为fromscore到分数为toscore的数据总数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetRangeFromSortedSetByHighestScore(System.String,System.Double,System.Double)">
+            <summary>
+            获取key集合从高分到低分排序数据，分数从fromscore到分数为toscore的数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetRangeFromSortedSetByLowestScore(System.String,System.Double,System.Double)">
+            <summary>
+            获取key集合从低分到高分排序数据，分数从fromscore到分数为toscore的数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetRangeWithScoresFromSortedSetByHighestScore(System.String,System.Double,System.Double)">
+            <summary>
+            获取key集合从高分到低分排序数据，分数从fromscore到分数为toscore的数据，带分数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetRangeWithScoresFromSortedSetByLowestScore(System.String,System.Double,System.Double)">
+            <summary>
+             获取key集合从低分到高分排序数据，分数从fromscore到分数为toscore的数据，带分数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetRangeFromSortedSet(System.String,System.Int32,System.Int32)">
+            <summary>
+             获取key集合数据，下标从fromRank到分数为toRank的数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetRangeFromSortedSetDesc(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取key集合倒叙排列数据，下标从fromRank到分数为toRank的数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetRangeWithScoresFromSortedSet(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取key集合数据，下标从fromRank到分数为toRank的数据，带分数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.GetRangeWithScoresFromSortedSetDesc(System.String,System.Int32,System.Int32)">
+            <summary>
+             获取key集合倒叙排列数据，下标从fromRank到分数为toRank的数据，带分数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.RemoveItemFromSortedSet(System.String,System.String)">
+            <summary>
+            删除key为value的数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.RemoveRangeFromSortedSet(System.String,System.Int32,System.Int32)">
+            <summary>
+            删除下标从minRank到maxRank的key集合数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.RemoveRangeFromSortedSetByScore(System.String,System.Double,System.Double)">
+            <summary>
+            删除分数从fromscore到toscore的key集合数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.PopItemWithHighestScoreFromSortedSet(System.String)">
+            <summary>
+            删除key集合中分数最大的数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.PopItemWithLowestScoreFromSortedSet(System.String)">
+            <summary>
+            删除key集合中分数最小的数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.SortedSetContainsItem(System.String,System.String)">
+            <summary>
+            判断key集合中是否存在value数据
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.IncrementItemInSortedSet(System.String,System.String,System.Double)">
+            <summary>
+            为key集合值为value的数据，分数加scoreby，返回相加后的分数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.StoreIntersectFromSortedSets(System.String,System.String[])">
+            <summary>
+            获取keys多个集合的交集，并把交集添加的newkey集合中，返回交集数据的总数
+            </summary>
+        </member>
+        <member name="M:Core.Template.Redis.RedisZSetService.StoreUnionFromSortedSets(System.String,System.String[])">
+            <summary>
+            获取keys多个集合的并集，并把并集数据添加到newkey集合中，返回并集数据的总数
+            </summary>
+        </member>
+        <member name="T:Core.Template.Startup">
+            <summary>
+            初始化服务配置类
+            </summary>
+        </member>
+        <member name="M:Core.Template.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            初始化服务配置类构造函数
+            </summary>
+        </member>
+        <member name="P:Core.Template.Startup.Configuration">
+            <summary>
+            初始化服务配置文件
+            </summary>
+        </member>
+        <member name="M:Core.Template.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            注册服务
+            </summary>
+        </member>
+        <member name="M:Core.Template.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            autofact 容器注入
+            </summary>
+        </member>
+        <member name="M:Core.Template.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            使用服务
+            </summary>
+        </member>
+        <member name="T:Core.Template.WeatherForecast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Core.Template.WeatherForecast.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Core.Template.WeatherForecast.TemperatureC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Core.Template.WeatherForecast.TemperatureF">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Core.Template.WeatherForecast.Summary">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

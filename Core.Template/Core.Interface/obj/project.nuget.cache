@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "atBiOkLMG5E+66Gedyem/Eo020qzoDfagk/1ghK5QNBmHBZ7EneaYGAw5ugHlF6EOqVu1XmIVPM1svH12Qq3lg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Interface\\Core.Interface.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PCXT\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

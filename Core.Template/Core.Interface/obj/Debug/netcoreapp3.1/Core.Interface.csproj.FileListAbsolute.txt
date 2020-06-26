@@ -1,0 +1,12 @@
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\bin\Debug\netcoreapp3.1\Core.Interface.deps.json
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\bin\Debug\netcoreapp3.1\Core.Interface.dll
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\bin\Debug\netcoreapp3.1\Core.Interface.pdb
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\bin\Debug\netcoreapp3.1\Core.Tool.dll
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\bin\Debug\netcoreapp3.1\Core.Tool.pdb
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\obj\Debug\netcoreapp3.1\Core.Interface.csprojAssemblyReference.cache
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\obj\Debug\netcoreapp3.1\Core.Interface.AssemblyInfoInputs.cache
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\obj\Debug\netcoreapp3.1\Core.Interface.AssemblyInfo.cs
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\obj\Debug\netcoreapp3.1\Core.Interface.csproj.CoreCompileInputs.cache
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\obj\Debug\netcoreapp3.1\Core.Interface.csproj.CopyComplete
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\obj\Debug\netcoreapp3.1\Core.Interface.dll
+C:\Users\PCXT\Desktop\Core.Template\Core.Interface\obj\Debug\netcoreapp3.1\Core.Interface.pdb

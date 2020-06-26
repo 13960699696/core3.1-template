@@ -1,0 +1,9 @@
+C:\Users\PCXT\Desktop\Core.Template\Core.Tool\bin\Debug\netcoreapp3.1\Core.Tool.deps.json
+C:\Users\PCXT\Desktop\Core.Template\Core.Tool\bin\Debug\netcoreapp3.1\Core.Tool.dll
+C:\Users\PCXT\Desktop\Core.Template\Core.Tool\obj\Debug\netcoreapp3.1\Core.Tool.AssemblyInfoInputs.cache
+C:\Users\PCXT\Desktop\Core.Template\Core.Tool\obj\Debug\netcoreapp3.1\Core.Tool.AssemblyInfo.cs
+C:\Users\PCXT\Desktop\Core.Template\Core.Tool\bin\Debug\netcoreapp3.1\Core.Tool.pdb
+C:\Users\PCXT\Desktop\Core.Template\Core.Tool\obj\Debug\netcoreapp3.1\Core.Tool.csproj.CoreCompileInputs.cache
+C:\Users\PCXT\Desktop\Core.Template\Core.Tool\obj\Debug\netcoreapp3.1\Core.Tool.dll
+C:\Users\PCXT\Desktop\Core.Template\Core.Tool\obj\Debug\netcoreapp3.1\Core.Tool.pdb
+C:\Users\PCXT\Desktop\Core.Template\Core.Tool\obj\Debug\netcoreapp3.1\Core.Tool.csprojAssemblyReference.cache
