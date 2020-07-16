@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zoWCPhvk9fvk9WTF7AeSpTYI7/m5IVExbKUIm70NgK0DGfrX8CNSN2mlecnBYhQ4nbsVI40UOk0cOZzVspPYTQ==",
+  "dgSpecHash": "tw53BnyxqiTmRZbDVT+3zgipxJLKNKh4sQsh7qLbg4m1PoqRubK+GlnJMuGPlVRl8iWAjKIBh7MBIm9B4PthWQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.models\\Core.models.csproj",
+  "projectFilePath": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.models\\Core.models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PCXT\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\PCXT\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

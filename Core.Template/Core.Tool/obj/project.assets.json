@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\Core.Tool.csproj",
+      "projectUniqueName": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\Core.Tool.csproj",
       "projectName": "Core.Tool",
-      "projectPath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\Core.Tool.csproj",
+      "projectPath": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\Core.Tool.csproj",
       "packagesPath": "C:\\Users\\PCXT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\obj\\",
+      "outputPath": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

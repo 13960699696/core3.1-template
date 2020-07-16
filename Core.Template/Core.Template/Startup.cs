@@ -98,7 +98,7 @@ namespace Core.Template
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage();//开发环境展示异常页面
             }
 
             #region 使用swagger接口可视化

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/twYcyh949YuDCH1cnyWPj3S7acrX5jGpKUSievt1czPs/M94G7BKl8BPsCQ0f+hQTOflkZqPrOzqOl51l6/kg==",
+  "dgSpecHash": "WaPWnpkHZuLbTEy9d1hVNceWrlf6SzsuLGCFiA5dGPzCylmZ8vodxgmkLCcsAuQcx8lHuo4MNILCK8ZncTWt2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\Core.Tool.csproj",
+  "projectFilePath": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\Core.Tool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PCXT\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

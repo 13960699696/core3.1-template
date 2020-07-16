@@ -96,6 +96,128 @@
             <param name="args"></param>
             <returns></returns>
         </member>
+        <member name="T:Core.Template.RabbitMq.IMessageConsume">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Template.RabbitMq.IMessageConsume.Consume(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:Core.Template.RabbitMq.ISend">
+            <summary>
+            发送消息接口
+            </summary>
+        </member>
+        <member name="T:Core.Template.RabbitMq.MesArgs">
+            <summary>
+            消息参数
+            </summary>
+        </member>
+        <member name="P:Core.Template.RabbitMq.MesArgs.sendEnum">
+            <summary>
+            消息推送的模式
+            现在支持：订阅模式,推送模式,主题路由模式
+            </summary>
+        </member>
+        <member name="P:Core.Template.RabbitMq.MesArgs.exchangeName">
+            <summary>
+            管道名称
+            </summary>
+        </member>
+        <member name="P:Core.Template.RabbitMq.MesArgs.rabbitQueeName">
+            <summary>
+            队列名称
+            </summary>
+        </member>
+        <member name="P:Core.Template.RabbitMq.MesArgs.routeName">
+            <summary>
+            路由名称
+            </summary>
+        </member>
+        <member name="T:Core.Template.RabbitMq.SendEnum">
+            <summary>
+            定义的枚举
+            </summary>
+        </member>
+        <member name="F:Core.Template.RabbitMq.SendEnum.订阅模式">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Template.RabbitMq.SendEnum.推送模式">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Template.RabbitMq.SendEnum.主题路由模式">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Template.RabbitMq.PushMsg">
+            <summary>
+            发送消息的类
+            </summary>
+        </member>
+        <member name="P:Core.Template.RabbitMq.PushMsg.sendMsg">
+            <summary>
+            发送的数据
+            </summary>
+        </member>
+        <member name="P:Core.Template.RabbitMq.PushMsg.sendEnum">
+            <summary>
+            消息推送的模式
+            现在支持：订阅模式,推送模式,主题路由模式
+            </summary>
+        </member>
+        <member name="P:Core.Template.RabbitMq.PushMsg.exchangeName">
+            <summary>
+            管道名称
+            </summary>
+        </member>
+        <member name="P:Core.Template.RabbitMq.PushMsg.routeName">
+            <summary>
+            路由名称
+            </summary>
+        </member>
+        <member name="T:Core.Template.RabbitMq.RabbitMQManage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Template.RabbitMq.RabbitMQManage.CreateEventBus">
+            <summary>
+            创建服务总线
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Template.RabbitMq.RabbitMQManage.DisposeBus">
+            <summary>
+            释放服务总线
+            </summary>
+        </member>
+        <member name="M:Core.Template.RabbitMq.RabbitMQManage.PushMessage(Core.Template.RabbitMq.PushMsg)">
+            <summary>
+             消息同步投递
+            </summary>
+            <param name="pushMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Template.RabbitMq.RabbitMQManage.PushMessageAsync(Core.Template.RabbitMq.PushMsg)">
+            <summary>
+            消息异步投递
+            </summary>
+            <param name="pushMsg"></param>
+        </member>
+        <member name="M:Core.Template.RabbitMq.RabbitMQManage.Subscribe``1(Core.Template.RabbitMq.MesArgs)">
+            <summary>
+            消息订阅
+            </summary>
+        </member>
         <member name="T:Core.Template.Redis.RedisBase">
             <summary>
             RedisBase类，是redis操作的基类，继承自IDisposable接口，主要用于释放内存

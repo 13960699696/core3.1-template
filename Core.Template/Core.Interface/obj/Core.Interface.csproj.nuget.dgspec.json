@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Interface\\Core.Interface.csproj": {}
+    "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Interface\\Core.Interface.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Interface\\Core.Interface.csproj": {
+    "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Interface\\Core.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Interface\\Core.Interface.csproj",
+        "projectUniqueName": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Interface\\Core.Interface.csproj",
         "projectName": "Core.Interface",
-        "projectPath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Interface\\Core.Interface.csproj",
+        "projectPath": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Interface\\Core.Interface.csproj",
         "packagesPath": "C:\\Users\\PCXT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Interface\\obj\\",
+        "outputPath": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Interface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\Core.Tool.csproj": {
-                "projectPath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\Core.Tool.csproj"
+              "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\Core.Tool.csproj": {
+                "projectPath": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\Core.Tool.csproj"
               }
             }
           }
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\Core.Tool.csproj": {
+    "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\Core.Tool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\Core.Tool.csproj",
+        "projectUniqueName": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\Core.Tool.csproj",
         "projectName": "Core.Tool",
-        "projectPath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\Core.Tool.csproj",
+        "projectPath": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\Core.Tool.csproj",
         "packagesPath": "C:\\Users\\PCXT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PCXT\\Desktop\\Core.Template\\Core.Tool\\obj\\",
+        "outputPath": "C:\\Users\\PCXT\\Desktop\\core3.1-template\\Core.Template\\Core.Tool\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
